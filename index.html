@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Dojo Weather</title>
+</head>
+<div>
+    <div class="nav flex">
+        <h1>DojoWeather</h1>
+        <ol class="nav1 flex">
+            <ul><button class="btn1" onclick="alert('Loading weather report...')">Burbank</button></ul>
+            <ul><button class="btn1" onclick="alert('Loading weather report...')">Chicago</button></ul>
+            <ul><button class="btn1" onclick="alert('Loading weather report...')">Dallas</button></ul>
+        </ol>
+    </div>
+    <header class="top flex">
+        <h2>San Jose</h2>
+        <p> show temperature in   
+            <select for="temperature" onchange="changetoF(a,b,c,d,e,f,g,h)">
+                <option value="celcius">C°</option>
+                <option value="fahrenheit">F°</option>
+            </select>
+        </p>
+    </header>
+    <div class="flex container">
+            <div class="main flex">
+                <div class="weather1 flex">
+                    <div class="weather-header ">
+                        <h3>Today</h3>
+                        <img src="./some_rain.png" alt="rain">
+                        <p>some rain</p>
+                        <div class=" temp flex">
+                        <div class="high"><span id="a">24</span>°
+                        </div>
+                        <div class="low"><span id="b">18</span>°
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather2 flex">
+                    <div class="weather-header ">
+                        <h3>Tomorrow</h3>
+                        <img src="./some_sun.png" alt="rain">
+                        <p>some sun</p>
+                        <div class=" temp flex">
+                        <div class="high"><span id="c">24</span>°
+                        </div>
+                        <div class="low"><span id="d">18</span>°
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather3 flex">
+                    <div class="weather-header ">
+                        <h3>Tomorrow</h3>
+                        <img src="./some_clouds.png" alt="rain">
+                        <p>some clouds</p>
+                        <div class=" temp flex">
+                        <div class="high"><span id="e">21</span>°
+                        </div>
+                        <div class="low"><span id="f">16</span>°
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather4 flex">
+                    <div class="weather-header ">
+                        <h3>Tomorrow</h3>
+                        <img src="./some_sun.png" alt="rain">
+                        <p>some sun</p>
+                        <div class=" temp flex">
+                        <div class="high"><span id="g">26</span>°
+                        </div>
+                        <div class="low"><span id="h">21</span>°
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="cookies flex" id="cookie1">
+        <img src="./cookie.png" alt="cookie">
+        <div class="context">
+            <h4>Stop! Cookie time</h4>
+            <p>We use cookies(sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button class="btn" onclick="deleteCookie(cookie1)">I Accept</button>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
